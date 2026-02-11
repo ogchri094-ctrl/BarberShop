@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zone Barber Shop</title>
+
+  <!-- FUENTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header animate">
+  <div class="logo animate">Zone Barber</div>
+
+  <nav class="nav-desktop animate">
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Galería</a>
+    <a href="#">Ubicación</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <button class="btn-cita animate">Agendar Cita</button>
+
+  <div class="menu-btn animate" id="menuBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- MENÚ MÓVIL -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#">Inicio</a>
+  <a href="#">Servicios</a>
+  <a href="#">Galería</a>
+  <a href="#">Ubicación</a>
+  <a href="#">Contacto</a>
+  <button class="btn-cita-mobile">Agendar Cita</button>
+</div>
+
+<section class="seccion1">
+  <div class="overlay"></div>
+
+  <div class="hero-content animate">
+    <h2><i class="ri-scissors-2-fill"></i> ZONE BARBER SHOP</h2>
+
+    <p>
+      <i class="ri-star-fill"></i>
+      Cortes modernos · Barba · Estilo premium
+    </p>
+
+    <div class="hero-buttons">
+      <button class="hero-btn">
+        <i class="ri-calendar-check-fill"></i> Agendar Cita
+      </button>
+
+      <button class="hero-btn-outline">
+        <i class="ri-whatsapp-fill"></i> WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<section class="classic-section animate">
+  <h2 class="classic-title">Cortes clásicos, estilo moderno</h2>
+  <p class="classic-subtitle">Servicios premium diseñados para tu mejor versión</p>
+
+  <div class="classic-cards">
+
+    <!-- CARD 1 -->
+    <div class="classic-card animate delay1">
+      <img src="servicio1.jpg" alt="Cortes de cabello">
+      <div class="card-content">
+        <h3><i class="ri-scissors-2-fill"></i> Cortes de Cabello</h3>
+        <ul>
+          <li>Corte para hombres</li>
+          <li>Corte para mujeres</li>
+          <li>Corte para niños</li>
+          <li>Perfilado y limpieza</li>
+        </ul>
+        <div class="price">$150 MXN</div>
+        <button>Agendar cita</button>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="classic-card animate delay2">
+      <img src="servicio2.jpg" alt="Barba">
+      <div class="card-content">
+        <h3><i class="ri-user-smile-fill"></i> Barbería & Barba</h3>
+        <ul>
+          <li>Perfilado de barba</li>
+          <li>Recorte de barba</li>
+          <li>Afeitado con navaja</li>
+          <li>Toalla caliente</li>
+        </ul>
+        <div class="price">$180 MXN</div>
+        <button>Agendar cita</button>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="classic-card animate delay3">
+      <img src="servicio3.jpg" alt="Premium">
+      <div class="card-content">
+        <h3><i class="ri-vip-crown-fill"></i> Experiencia Premium</h3>
+        <ul>
+          <li>Servicio Silver Fox</li>
+          <li>Masaje capilar</li>
+          <li>Masaje cuello y hombros</li>
+          <li>Productos premium</li>
+        </ul>
+        <div class="price">$300 MXN</div>
+        <button>Agendar cita</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="testimony-section">
+  <h2 class="section-title">TESTIMONIOS</h2>
+
+  <div class="slider">
+    <div class="slider-track">
+
+      <div class="testimony-card">
+        <img src="cliente1.jpg">
+        <h4>Juan López</h4>
+        <p>Excelente servicio, ambiente profesional y cortes perfectos.</p>
+      </div>
+
+      <div class="testimony-card">
+        <img src="cliente2.jpg">
+        <h4>Carlos Méndez</h4>
+        <p>La mejor barbería que he visitado, atención premium.</p>
+      </div>
+
+      <div class="testimony-card">
+        <img src="cliente3.jpg">
+        <h4>Daniel Ruiz</h4>
+        <p>Vale cada peso, experiencia de lujo.</p>
+      </div>
+
+      <div class="testimony-card">
+        <img src="cliente4.jpg">
+        <h4>Pedro Torres</h4>
+        <p>El corte quedó increíble, regresaré siempre.</p>
+      </div>
+
+      <div class="testimony-card">
+        <img src="cliente5.jpg">
+        <h4>Mario Sánchez</h4>
+        <p>Muy buena atención y lugar elegante.</p>
+      </div>
+
+      <!-- duplicados para loop infinito -->
+      <div class="testimony-card">
+        <img src="cliente1.jpg">
+        <h4>Juan López</h4>
+        <p>Excelente servicio, ambiente profesional y cortes perfectos.</p>
+      </div>
+
+      <div class="testimony-card">
+        <img src="cliente2.jpg">
+        <h4>Carlos Méndez</h4>
+        <p>La mejor barbería que he visitado, atención premium.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="booking-section animate">
+
+  <div class="booking-image">
+    <img src="servicioagenda.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="booking-text">
+     
+    </div>
+  </div>
+
+  <div class="booking-form animate">
+
+    <h2>Agenda tu cita</h2>
+    <p>Completa el formulario y confirma por WhatsApp</p>
+
+    <form id="bookingForm">
+
+      <div class="input-group">
+        <i class="ri-user-line"></i>
+        <input type="text" id="name" placeholder="Nombre completo" required>
+      </div>
+
+      <div class="input-group">
+        <i class="ri-mail-line"></i>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+      </div>
+
+      <div class="input-group">
+        <i class="ri-scissors-2-line"></i>
+        <select id="service" required>
+          <option value="">Selecciona servicio</option>
+          <option>Corte de cabello</option>
+          <option>Barba</option>
+          <option>Experiencia Premium</option>
+        </select>
+      </div>
+
+      <div class="input-row">
+        <div class="input-group">
+          <i class="ri-calendar-line"></i>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="input-group">
+          <i class="ri-time-line"></i>
+          <input type="time" id="time" required>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-book">
+        Reservar ahora <i class="ri-arrow-right-line"></i>
+      </button>
+
+      <div class="loader"></div>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <i class="ri-check-line"></i>
+    <h3>¡Cita lista!</h3>
+    <p>Confirma tu cita por WhatsApp</p>
+    <button id="whatsappBtn">Enviar a WhatsApp</button>
+  </div>
+</div>
+
+<section class="compra-productos animate">
+  <h2 class="productos-title">Nuestros Productos</h2>
+  <p class="productos-sub">Productos premium para tu estilo</p>
+
+  <div class="productos-grid">
+
+    <div class="producto-card animate">
+      <img src="cera.webp" alt="">
+      <h3>Cera Premium</h3>
+      <p>Fijación fuerte con acabado natural</p>
+      <span class="precio">$180 MXN</span>
+      <button onclick="comprar('Cera Premium',180)">
+        Comprar <i class="ri-shopping-cart-line"></i>
+      </button>
+    </div>
+
+    <div class="producto-card animate">
+      <img src="aceite.webp" alt="">
+      <h3>Aceite para barba</h3>
+      <p>Nutrición y brillo profesional</p>
+      <span class="precio">$150 MXN</span>
+      <button onclick="comprar('Aceite para barba',150)">
+        Comprar <i class="ri-shopping-cart-line"></i>
+      </button>
+    </div>
+
+    <div class="producto-card animate">
+      <img src="shampoo.jpg" alt="">
+      <h3>Shampoo masculino</h3>
+      <p>Limpieza profunda premium</p>
+      <span class="precio">$200 MXN</span>
+      <button onclick="comprar('Shampoo masculino',200)">
+        Comprar <i class="ri-shopping-cart-line"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-producto" id="modalProducto">
+  <div class="modal-content">
+    <i class="ri-check-line"></i>
+    <h3 id="modalTitle"></h3>
+    <p id="modalPrice"></p>
+    <button id="whatsappBuy">Comprar por WhatsApp</button>
+    <button class="close-btn" onclick="cerrarModal()">Cerrar</button>
+  </div>
+</div>
+
+<section class="courses-section animate">
+
+  <h2>ACADEMIA DEL BARBERO</h2>
+  <p>Aprende con nuestros cursos profesionales</p>
+
+  <div class="courses-grid">
+
+    <div class="course-card animate">
+      <i class="ri-scissors-2-line"></i>
+      <h3>Curso Básico</h3>
+      <p>Domina los cortes clásicos y técnicas fundamentales.</p>
+      <span>$999 MXN</span>
+      <button onclick="comprarCurso('Curso Básico', 999)">Comprar</button>
+    </div>
+
+    <div class="course-card premium animate">
+      <i class="ri-vip-crown-line"></i>
+      <h3>Curso Premium</h3>
+      <p>Fade avanzado, barba, marketing y clientes.</p>
+      <span>$1999 MXN</span>
+      <button onclick="comprarCurso('Curso Premium', 1999)">Comprar</button>
+    </div>
+
+    <div class="course-card animate">
+      <i class="ri-video-line"></i>
+      <h3>Curso Online</h3>
+      <p>Acceso ilimitado a videos profesionales.</p>
+      <span>$799 MXN</span>
+      <button onclick="comprarCurso('Curso Online', 799)">Comprar</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div class="modalCurso" id="modalCurso">
+  <div class="modal-content">
+    <h3 id="modalCursoTitulo"></h3>
+    <p id="modalCursoPrecio"></p>
+    <button id="btnWhatsappCurso">Comprar por WhatsApp</button>
+    <span onclick="cerrarCurso()" class="close">✖</span>
+  </div>
+</div>
+
+
+<footer class="footer-premium animate">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>BARBERÍA PREMIUM</h3>
+      <p>Estilo, elegancia y formación profesional. Cortes clásicos y cursos de barbería nivel empresarial.</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-facebook-circle-line"></i></a>
+        <a href="#"><i class="ri-tiktok-line"></i></a>
+        <a href="#"><i class="ri-whatsapp-line"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#">Corte Clásico</a></li>
+        <li><a href="#">Barba Premium</a></li>
+        <li><a href="#">Experiencia VIP</a></li>
+        <li><a href="#">Cursos Profesionales</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Academia</a></li>
+        <li><a href="#">Testimonios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Suscríbete para promociones exclusivas</p>
+      <form class="newsletter">
+        <input type="email" placeholder="Tu correo" required>
+        <button>Suscribirme</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Barbería Premium | Todos los derechos reservados</p>
+    <div class="legal">
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
